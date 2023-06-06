@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<!--
+ @license
+ Copyright 2019 Google LLC. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+-->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FUT Biastok 2023</title>
+		<link rel="stylesheet" type="text/css" href="style.css?ver=1"/>
+	</head>
+	<body>
+		<div class="maintitle">
+			FORUM UCZELNI TECHNICZNYCH
+		</div>
+		<div class="subtitle">
+			Białystok 2023
+		</div>
+		<div class="menu">
+			<div class="position">
+				<button class="button" onclick="showContent('zakwaterowanie')">Zakwaterowanie</button>
+			</div>
+			<div class="position">
+				<button class="button" onclick="showContent('harmonogram')">Harmonogram</button>
+			</div>
+			<div class="position">
+				<button class="button" onclick="showContent('lokalizacja')">Lokalizacja</button>
+			</div>
+			<div class="position">
+				<button class="button" onclick="showContent('informator')">Informator</button>
+			</div>
+			<div class="position">
+				<button class="button" onclick="showContent('gra')">Gra miejska</button>
+			</div>
+			<div class="position">
+				<button class="button" onclick="showContent('kontakt')">Kontakt</button>
+			</div>
+		</div>
+		
+		<div class="container" id="zakwaterowanie">
+			<div class="img-container">
+				<img src="resources/hotel.jpg" alt="">
+			</div>
+			<div class="section-title">
+				hotel - twoja stara
+			</div>
+			<div class="section-text">
+				Już 16.06.2023 zobaczymy się w hotelu Twoja Stara. Czekamy na Was z niecierpliwością w recepcji hotelowej.<br>
+				W razie problemów z dojazdem zamieszczamy wam mapę Google z lokalizacją!
+			</div>
+			<div class="section-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38314.90872371786!2d23.119349425919612!3d53.11590562791582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffbfb9415aee5%3A0x1f6449ccc6c966f7!2sPolitechnika%20Bia%C5%82ostocka!5e0!3m2!1spl!2spl!4v1682708374992!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+		
+		<div class="container" id="harmonogram">
+			<div class="path">
+				<button class="path-title button" onclick="showTimetable('wspolny')">wspólny</button>
+				<div class="timetable" id="wspolny">
+					<table>
+						<tr>
+							<th>poniedziałek</th>
+						</tr>
+						<tr>
+							<td>śniadanko</td>
+							<td>7:00 - 8:00</td>
+						</tr>
+						<tr>
+							<td>opierdalańsko</td>
+							<td>8:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>obiadek</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>chlańkso do rana</td>
+							<td>16:00 - 6:00</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>wtorek</th>
+						</tr>
+						<tr>
+							<td>śniadanko</td>
+							<td>7:00 - 8:00</td>
+						</tr>
+						<tr>
+							<td>opierdalańsko</td>
+							<td>8:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>obiadek</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>chlańkso do rana</td>
+							<td>16:00 - 6:00</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>środa</th>
+						</tr>
+						<tr>
+							<td>śniadanko</td>
+							<td>7:00 - 8:00</td>
+						</tr>
+						<tr>
+							<td>opierdalańsko</td>
+							<td>8:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>obiadek</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>chlańkso do rana</td>
+							<td>16:00 - 6:00</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="path">
+				<button class="path-title button" onclick="showTimetable('jakosc')">jakość</button>
+				<div class="timetable" id="jakosc">
+					<table>
+						<tr>
+							<th>poniedziałek</th>
+						</tr>
+						<tr>
+							<td>śniadanko</td>
+							<td>7:00 - 8:00</td>
+						</tr>
+						<tr>
+							<td>opierdalańsko</td>
+							<td>8:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>obiadek</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>chlańkso do rana</td>
+							<td>16:00 - 6:00</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>wtorek</th>
+						</tr>
+						<tr>
+							<td>śniadanko</td>
+							<td>7:00 - 8:00</td>
+						</tr>
+						<tr>
+							<td>opierdalańsko</td>
+							<td>8:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>obiadek</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>chlańkso do rana</td>
+							<td>16:00 - 6:00</td>
+						</tr>
+					</table>
+					<table>
+					<tr>
+						<th>środa</th>
+					</tr>
+					<tr>
+						<td>śniadanko</td>
+						<td>7:00 - 8:00</td>
+					</tr>
+					<tr>
+						<td>opierdalańsko</td>
+						<td>8:00 - 15:00</td>
+					</tr>
+					<tr>
+						<td>obiadek</td>
+						<td>15:00 - 16:00</td>
+					</tr>
+					<tr>
+						<td>chlańkso do rana</td>
+						<td>16:00 - 6:00</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+			<div class="path">
+				<button class="path-title button" onclick="showTimetable('prawna')">prawna</button>
+				<div class="timetable" id="prawna">
+					<table>
+						<tr>
+							<th>poniedziałek</th>
+						</tr>
+						<tr>
+							<td>śniadanko</td>
+							<td>7:00 - 8:00</td>
+						</tr>
+						<tr>
+							<td>opierdalańsko</td>
+							<td>8:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>obiadek</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>chlańkso do rana</td>
+							<td>16:00 - 6:00</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>wtorek</th>
+						</tr>
+						<tr>
+							<td>śniadanko</td>
+							<td>7:00 - 8:00</td>
+						</tr>
+						<tr>
+							<td>opierdalańsko</td>
+							<td>8:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>obiadek</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>chlańkso do rana</td>
+							<td>16:00 - 6:00</td>
+						</tr>
+					</table>
+					<table>
+					<tr>
+						<th>środa</th>
+					</tr>
+					<tr>
+						<td>śniadanko</td>
+						<td>7:00 - 8:00</td>
+					</tr>
+					<tr>
+						<td>opierdalańsko</td>
+						<td>8:00 - 15:00</td>
+					</tr>
+					<tr>
+						<td>obiadek</td>
+						<td>15:00 - 16:00</td>
+					</tr>
+					<tr>
+						<td>chlańkso do rana</td>
+						<td>16:00 - 6:00</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+			<div class="path">
+				<button class="path-title button" onclick="showTimetable('promocja')">promocja</button>
+				<div class="timetable" id="promocja">
+					<table>
+						<tr>
+							<th>poniedziałek</th>
+						</tr>
+						<tr>
+							<td>śniadanko</td>
+							<td>7:00 - 8:00</td>
+						</tr>
+						<tr>
+							<td>opierdalańsko</td>
+							<td>8:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>obiadek</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>chlańkso do rana</td>
+							<td>16:00 - 6:00</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>wtorek</th>
+						</tr>
+						<tr>
+							<td>śniadanko</td>
+							<td>7:00 - 8:00</td>
+						</tr>
+						<tr>
+							<td>opierdalańsko</td>
+							<td>8:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>obiadek</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>chlańkso do rana</td>
+							<td>16:00 - 6:00</td>
+						</tr>
+					</table>
+					<table>
+					<tr>
+						<th>środa</th>
+					</tr>
+					<tr>
+						<td>śniadanko</td>
+						<td>7:00 - 8:00</td>
+					</tr>
+					<tr>
+						<td>opierdalańsko</td>
+						<td>8:00 - 15:00</td>
+					</tr>
+					<tr>
+						<td>obiadek</td>
+						<td>15:00 - 16:00</td>
+					</tr>
+					<tr>
+						<td>chlańkso do rana</td>
+						<td>16:00 - 6:00</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="lokalizacja">
+			<p>lokalizacja</p>
+		</div>
+		<div class="container" id="informator">
+			<p>informator</p>
+		</div>
+		<div class="container" id="gra">
+			<p>gra miejska</p>
+		</div>
+		<div class="container" id="kontakt">
+			<p>kontakt</p>
+		</div>
+		
+		<script>
+			function showContent(id) {
+				var contentDivs = document.getElementsByClassName('container');
+				for(var i = 0; i < contentDivs.length; i++) contentDivs[i].style.display = 'none';
+				document.getElementById(id).style.display = 'block';
+			}
+			
+			function showTimetable(id) {
+				var contentDivs = document.getElementsByClassName('timetable');
+				for(var i = 0; i < contentDivs.length; i++) contentDivs[i].style.display = 'none';
+				document.getElementById(id).style.display = 'block';
+			}
+		</script>
+	</body>
+</html>
