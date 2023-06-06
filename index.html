@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		
-		<div class="container" id="zakwaterowanie">
+		<div class="container" id="zakwaterowanie" style="display:block;">
 			<div class="img-container">
 				<img src="resources/hotel.jpg" alt="">
 			</div>
@@ -337,7 +337,28 @@
 			<p>informator</p>
 		</div>
 		<div class="container" id="gra">
-			<p>gra miejska</p>
+		
+			<div class="stage" id="stage1" style="display: block;">
+				<div class="stage-title">PRZYSTAŃ 1</div>
+				<label for="answer1">ODPOWIEDŹ:</label>
+				<input type="text" id="answer1" name="answer1" placeholder="odpowiedź...">
+				<button type="button" onclick="checkAnswer(1)">SUBMIT</button>
+			</div>
+			<div class="stage" id="stage2">
+				<div class="stage-title">PRZYSTAŃ 2</div>
+				<label for="answer2">ODPOWIEDŹ:</label>
+				<input type="text" id="answer2" name="answer2" placeholder="odpowiedź...">
+				<button type="button" onclick="checkAnswer(2)">SUBMIT</button>
+			</div>
+			<div class="stage" id="stage3">
+				<div class="stage-title">PRZYSTAŃ 3</div>
+				<label for="answer3">ODPOWIEDŹ:</label>
+				<input type="text" id="answer3" name="answer3" placeholder="odpowiedź...">
+				<button type="button" onclick="checkAnswer(3)">SUBMIT</button>
+			</div>
+			
+			<p id="successMessage" style="display: none;">Congratulations! You have completed the quiz.</p>
+			
 		</div>
 		<div class="container" id="kontakt">
 			<p>kontakt</p>
@@ -354,6 +375,24 @@
 				var contentDivs = document.getElementsByClassName('timetable');
 				for(var i = 0; i < contentDivs.length; i++) contentDivs[i].style.display = 'none';
 				document.getElementById(id).style.display = 'block';
+			}
+			
+			function checkAnswer(questionNumber) {
+				var answerInput = document.getElementById('answer' + questionNumber).value;
+				var currentQuestion = document.getElementById('stage' + questionNumber);
+				var nextQuestion = document.getElementById('stage' + (questionNumber + 1));
+				var successMessage = document.getElementById('successMessage');
+
+				if (questionNumber === 1 && answerInput.toLowerCase() === 'paris') {
+					currentQuestion.style.display = 'none';
+					nextQuestion.style.display = 'block';
+				} else if (questionNumber === 2 && answerInput.toLowerCase() === 'jupiter') {
+					currentQuestion.style.display = 'none';
+					nextQuestion.style.display = 'block';
+				} else if (questionNumber === 3 && answerInput.toLowerCase() === 'leonardo da vinci') {
+					currentQuestion.style.display = 'none';
+					successMessage.style.display = 'block';
+				}
 			}
 		</script>
 	</body>

@@ -101,7 +101,14 @@ body
 
 .container .path .path-title
 {
-	
+	border-radius: 10px;
+	radius: 10px;
+	border: none;
+	color: #ffffff;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 }
 
 .container .path .button
@@ -109,19 +116,19 @@ body
 	background-color: #111111;
 	border: none;
 	color: #ffffff;
-	text-align: left;
+	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 20px;
 	margin-top: 20px;
 	text-transform: uppercase;
 	font-family: 'Barlow Condensed', sans-serif;
+	min-width: 120px;
 }
 
 .container .path .timetable
 {
 	display: none;
-	transition: 100ms;
 }
 
 .container .path .timetable table
@@ -151,4 +158,53 @@ body
 tr:nth-child(even)
 {
 	background-color: #222222;
+}
+
+.container .stage
+{
+	display: none;
+	width: 100%;
+}
+
+.container .stage .stage-title
+{
+	font-size: 40px;
+	margin: 15px 0px;
+}
+
+.container .stage label
+{
+	display: block;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+.container .stage input
+{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 20px;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 10px;
+	outline: none;
+	padding: 2px;
+}
+
+.container .stage button
+{
+	display: block;
+	background-color: #555555;
+	border-radius: 10px;
+	radius: 10px;
+	border: none;
+	color: #ffffff;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	min-width: 120px;
+	text-transform: uppercase;
+	font-family: 'Barlow Condensed', sans-serif;
 }
