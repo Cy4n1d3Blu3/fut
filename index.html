@@ -10,7 +10,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>FUT Biastok 2023</title>
-		<link rel="stylesheet" type="text/css" href="style.css?ver=1"/>
+		<link rel="stylesheet" type="text/css" href="styles/style.css?ver=1">
 	</head>
 	<body>
 		<div class="maintitle">
@@ -45,293 +45,253 @@
 				<img src="resources/hotel.jpg" alt="">
 			</div>
 			<div class="section-title">
-				hotel - twoja stara
+				Hotel 3 Trio Białystok
 			</div>
 			<div class="section-text">
-				Już 16.06.2023 zobaczymy się w hotelu Twoja Stara. Czekamy na Was z niecierpliwością w recepcji hotelowej.<br>
-				W razie problemów z dojazdem zamieszczamy wam mapę Google z lokalizacją!
+				Galowie! Zakwaterowanie oraz rejestracja odbędzie się w Hotelu 3 Trio, który wyróżnia się wysokim standardem - godnym samego Cezara, świetną kadrą, bardzo dobrym jedzeniem oraz lokalizacją. Będzie to dla Was świetne miejsce na odrobinę spokoju i wyciszenia przed serią atrakcji oraz ciężkiej pracy na szkoleniach i Sesji Roboczej.<br><br>
+				W hotelu będą czekać na Was nasi rodacy, którzy obdarują Was specjalnie przygotowanymi dla was starterami.
 			</div>
 			<div class="section-map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38314.90872371786!2d23.119349425919612!3d53.11590562791582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffbfb9415aee5%3A0x1f6449ccc6c966f7!2sPolitechnika%20Bia%C5%82ostocka!5e0!3m2!1spl!2spl!4v1682708374992!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1066.6957704343922!2d23.12567126463673!3d53.1164590096742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffbed88e26e97%3A0xc5bd4695defbd0ec!2sHotel%203%20Trio%20Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1686305692090!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</div>
 		
 		<div class="container" id="harmonogram">
 			<div class="path">
-				<button class="path-title button" onclick="showTimetable('wspolny')">wspólny</button>
-				<div class="timetable" id="wspolny">
+				<button class="path-title button" onclick="showTimetable('rozszerzenie')">rozszerzenie</button>
+				<div class="timetable" id="rozszerzenie">
 					<table>
 						<tr>
-							<th>poniedziałek</th>
+							<th>czwartek</th>
 						</tr>
 						<tr>
-							<td>śniadanko</td>
-							<td>7:00 - 8:00</td>
+							<td>Rejestracja uczestników wersji rozszerzonej w Hotel 3 Trio</td>
+							<td>15:00 - 18:00</td>
 						</tr>
 						<tr>
-							<td>opierdalańsko</td>
-							<td>8:00 - 15:00</td>
+							<td>Przejazd na miejsce integracji</td>
+							<td>18:15 - 18:45</td>
 						</tr>
 						<tr>
-							<td>obiadek</td>
-							<td>15:00 - 16:00</td>
-						</tr>
-						<tr>
-							<td>chlańkso do rana</td>
-							<td>16:00 - 6:00</td>
+							<td>Kolacja i integracja (ognisko)</td>
+							<td>18:45</td>
 						</tr>
 					</table>
 					<table>
 						<tr>
-							<th>wtorek</th>
+							<th>piątek</th>
 						</tr>
 						<tr>
-							<td>śniadanko</td>
-							<td>7:00 - 8:00</td>
+							<td>Śniadanie</td>
+							<td>06:30 - 09:00</td>
 						</tr>
 						<tr>
-							<td>opierdalańsko</td>
-							<td>8:00 - 15:00</td>
+							<td>Przyjazd na kampus PB</td>
+							<td>09:00 - 09:30</td>
 						</tr>
 						<tr>
-							<td>obiadek</td>
-							<td>15:00 - 16:00</td>
+							<td>Atrakcje</td>
+							<td>09:30 - 13:00</td>
 						</tr>
 						<tr>
-							<td>chlańkso do rana</td>
-							<td>16:00 - 6:00</td>
-						</tr>
-					</table>
-					<table>
-						<tr>
-							<th>środa</th>
+							<td>Czas wolny</td>
+							<td>13:00 - 14:00</td>
 						</tr>
 						<tr>
-							<td>śniadanko</td>
-							<td>7:00 - 8:00</td>
+							<td>Przyjazd na kampus PB</td>
+							<td>14:00 - 14:30</td>
 						</tr>
 						<tr>
-							<td>opierdalańsko</td>
-							<td>8:00 - 15:00</td>
+							<td>Obiad (dla rozszerzenia w CNK)</td>
+							<td>14:30 - 15:30</td>
 						</tr>
 						<tr>
-							<td>obiadek</td>
-							<td>15:00 - 16:00</td>
-						</tr>
-						<tr>
-							<td>chlańkso do rana</td>
-							<td>16:00 - 6:00</td>
+							<td>Open Space</td>
+							<td>15:30 - 18:15</td>
 						</tr>
 					</table>
 				</div>
 			</div>
 			<div class="path">
-				<button class="path-title button" onclick="showTimetable('jakosc')">jakość</button>
+				<button class="path-title button" onclick="showTimetable('podstawa')">podstawa</button>
+				<div class="timetable" id="podstawa">
+					<table>
+						<tr>
+							<th>piątek</th>
+						</tr>
+						<tr>
+							<td>Rejestracja uczestników wersji podstawowej - Hotel 3 Trio</td>
+							<td>14:00 - 17:00</td>
+						</tr>
+						<tr>
+							<td>Przyjazd na kampus PB</td>
+							<td>17:30 - 18:00</td>
+						</tr>
+						<tr>
+							<td>Oficjalne otwarcie (smart casual)</td>
+							<td>18:15 - 20:30</td>
+						</tr>
+						<tr>
+							<td>Kolacja i integracja</td>
+							<td>20:45</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>sobota</th>
+						</tr>
+						<tr>
+							<td>Śniadanie</td>
+							<td>06:30 - 09:00</td>
+						</tr>
+						<tr>
+							<td>Przyjazd na kampus PB</td>
+							<td>09:10 - 09:50</td>
+						</tr>
+						<tr>
+							<td>Szkolenia/Rada Starszych</td>
+							<td>10:00 - 15:00</td>
+						</tr>
+						<tr>
+							<td>Obiad</td>
+							<td>15:00 - 16:00</td>
+						</tr>
+						<tr>
+							<td>Sesja robocza</td>
+							<td>16:00 - 18:00</td>
+						</tr>
+						<tr>
+							<td>Przyjazd do hotelu</td>
+							<td>18:00 - 18:40</td>
+						</tr>
+						<tr>
+							<td>Czas wolny</td>
+							<td>18:40 - 20:00</td>
+						</tr>
+						<tr>
+							<td>Bal podsumowujący</td>
+							<td>20:00 - 04:00</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>niedziela</th>
+						</tr>
+						<tr>
+							<td>Śniadanie</td>
+							<td>06:30 - 10:00</td>
+						</tr>
+						<tr>
+							<td>Wykwaterowanie z hotelu</td>
+							<td>11:00</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="path">
+				<button class="path-title button" onclick="showTimetable('wspolpraca')">współpraca</button>
+				<div class="timetable" id="wspolpraca">
+					<table>
+						<tr>
+							<th>sobota</th>
+						</tr>
+						<tr>
+							<td>Szkolenie nr 1</td>
+							<td>10:00 - 11:30</td>
+						</tr>
+						<tr>
+							<td>Przerwa kawowa</td>
+							<td>11:30 - 11:45</td>
+						</tr>
+						<tr>
+							<td>Szkolenie nr 2</td>
+							<td>11:45 - 13:15</td>
+						</tr>
+						<tr>
+							<td>Przerwa kawowa</td>
+							<td>13:15 - 13:30</td>
+						</tr>
+						<tr>
+							<td>Szkolenie nr 3</td>
+							<td>13:30 - 15:00</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="path">
+				<button class="path-title button" onclick="showTimetable('jakosc')">jakość kształcenia</button>
 				<div class="timetable" id="jakosc">
 					<table>
 						<tr>
-							<th>poniedziałek</th>
+							<th>sobota</th>
 						</tr>
 						<tr>
-							<td>śniadanko</td>
-							<td>7:00 - 8:00</td>
+							<td>Szkolenie nr 1</td>
+							<td>10:00 - 11:30</td>
 						</tr>
 						<tr>
-							<td>opierdalańsko</td>
-							<td>8:00 - 15:00</td>
+							<td>Przerwa kawowa</td>
+							<td>11:30 - 11:45</td>
 						</tr>
 						<tr>
-							<td>obiadek</td>
-							<td>15:00 - 16:00</td>
+							<td>Szkolenie nr 2</td>
+							<td>11:45 - 13:15</td>
 						</tr>
 						<tr>
-							<td>chlańkso do rana</td>
-							<td>16:00 - 6:00</td>
+							<td>Przerwa kawowa</td>
+							<td>13:15 - 13:30</td>
+						</tr>
+						<tr>
+							<td>Szkolenie nr 3</td>
+							<td>13:30 - 15:00</td>
 						</tr>
 					</table>
-					<table>
-						<tr>
-							<th>wtorek</th>
-						</tr>
-						<tr>
-							<td>śniadanko</td>
-							<td>7:00 - 8:00</td>
-						</tr>
-						<tr>
-							<td>opierdalańsko</td>
-							<td>8:00 - 15:00</td>
-						</tr>
-						<tr>
-							<td>obiadek</td>
-							<td>15:00 - 16:00</td>
-						</tr>
-						<tr>
-							<td>chlańkso do rana</td>
-							<td>16:00 - 6:00</td>
-						</tr>
-					</table>
-					<table>
-					<tr>
-						<th>środa</th>
-					</tr>
-					<tr>
-						<td>śniadanko</td>
-						<td>7:00 - 8:00</td>
-					</tr>
-					<tr>
-						<td>opierdalańsko</td>
-						<td>8:00 - 15:00</td>
-					</tr>
-					<tr>
-						<td>obiadek</td>
-						<td>15:00 - 16:00</td>
-					</tr>
-					<tr>
-						<td>chlańkso do rana</td>
-						<td>16:00 - 6:00</td>
-					</tr>
-				</table>
 				</div>
 			</div>
 			<div class="path">
-				<button class="path-title button" onclick="showTimetable('prawna')">prawna</button>
-				<div class="timetable" id="prawna">
+				<button class="path-title button" onclick="showTimetable('komunikacja')">komunikacja interpersonalna</button>
+				<div class="timetable" id="komunikacja">
 					<table>
 						<tr>
-							<th>poniedziałek</th>
+							<th>sobota</th>
 						</tr>
 						<tr>
-							<td>śniadanko</td>
-							<td>7:00 - 8:00</td>
+							<td>Szkolenie nr 1</td>
+							<td>10:00 - 11:30</td>
 						</tr>
 						<tr>
-							<td>opierdalańsko</td>
-							<td>8:00 - 15:00</td>
+							<td>Przerwa kawowa</td>
+							<td>11:30 - 11:45</td>
 						</tr>
 						<tr>
-							<td>obiadek</td>
-							<td>15:00 - 16:00</td>
+							<td>Szkolenie nr 2</td>
+							<td>11:45 - 13:15</td>
 						</tr>
 						<tr>
-							<td>chlańkso do rana</td>
-							<td>16:00 - 6:00</td>
+							<td>Przerwa kawowa</td>
+							<td>13:15 - 13:30</td>
+						</tr>
+						<tr>
+							<td>Szkolenie nr 3</td>
+							<td>13:30 - 15:00</td>
 						</tr>
 					</table>
-					<table>
-						<tr>
-							<th>wtorek</th>
-						</tr>
-						<tr>
-							<td>śniadanko</td>
-							<td>7:00 - 8:00</td>
-						</tr>
-						<tr>
-							<td>opierdalańsko</td>
-							<td>8:00 - 15:00</td>
-						</tr>
-						<tr>
-							<td>obiadek</td>
-							<td>15:00 - 16:00</td>
-						</tr>
-						<tr>
-							<td>chlańkso do rana</td>
-							<td>16:00 - 6:00</td>
-						</tr>
-					</table>
-					<table>
-					<tr>
-						<th>środa</th>
-					</tr>
-					<tr>
-						<td>śniadanko</td>
-						<td>7:00 - 8:00</td>
-					</tr>
-					<tr>
-						<td>opierdalańsko</td>
-						<td>8:00 - 15:00</td>
-					</tr>
-					<tr>
-						<td>obiadek</td>
-						<td>15:00 - 16:00</td>
-					</tr>
-					<tr>
-						<td>chlańkso do rana</td>
-						<td>16:00 - 6:00</td>
-					</tr>
-				</table>
-				</div>
-			</div>
-			<div class="path">
-				<button class="path-title button" onclick="showTimetable('promocja')">promocja</button>
-				<div class="timetable" id="promocja">
-					<table>
-						<tr>
-							<th>poniedziałek</th>
-						</tr>
-						<tr>
-							<td>śniadanko</td>
-							<td>7:00 - 8:00</td>
-						</tr>
-						<tr>
-							<td>opierdalańsko</td>
-							<td>8:00 - 15:00</td>
-						</tr>
-						<tr>
-							<td>obiadek</td>
-							<td>15:00 - 16:00</td>
-						</tr>
-						<tr>
-							<td>chlańkso do rana</td>
-							<td>16:00 - 6:00</td>
-						</tr>
-					</table>
-					<table>
-						<tr>
-							<th>wtorek</th>
-						</tr>
-						<tr>
-							<td>śniadanko</td>
-							<td>7:00 - 8:00</td>
-						</tr>
-						<tr>
-							<td>opierdalańsko</td>
-							<td>8:00 - 15:00</td>
-						</tr>
-						<tr>
-							<td>obiadek</td>
-							<td>15:00 - 16:00</td>
-						</tr>
-						<tr>
-							<td>chlańkso do rana</td>
-							<td>16:00 - 6:00</td>
-						</tr>
-					</table>
-					<table>
-					<tr>
-						<th>środa</th>
-					</tr>
-					<tr>
-						<td>śniadanko</td>
-						<td>7:00 - 8:00</td>
-					</tr>
-					<tr>
-						<td>opierdalańsko</td>
-						<td>8:00 - 15:00</td>
-					</tr>
-					<tr>
-						<td>obiadek</td>
-						<td>15:00 - 16:00</td>
-					</tr>
-					<tr>
-						<td>chlańkso do rana</td>
-						<td>16:00 - 6:00</td>
-					</tr>
-				</table>
 				</div>
 			</div>
 		</div>
 		<div class="container" id="lokalizacja">
-			<p>lokalizacja</p>
+			<div class="img-container">
+				<img src="resources/cnk.jpg" alt="">
+			</div>
+			<div class="section-title">
+				Centrum Nowoczesnego Kształcenia
+			</div>
+			<div class="section-text">
+				To tutaj będą odbywały się wszystkie wasze szkolenia!
+			</div>
+			<div class="section-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3196.325973317981!2d23.147827894504285!3d53.11847858479393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffbfef9c99c19%3A0x4cc1097170873c99!2sCentrum%20Nowoczesnego%20Kszta%C5%82cenia%20Politechniki%20Bia%C5%82ostockiej!5e0!3m2!1spl!2spl!4v1686321564064!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 		</div>
 		<div class="container" id="informator">
 			<p>informator</p>
@@ -340,18 +300,21 @@
 		
 			<div class="stage" id="stage1" style="display: block;">
 				<div class="stage-title">PRZYSTAŃ 1</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3196.325973317981!2d23.147827894504285!3d53.11847858479393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffbfef9c99c19%3A0x4cc1097170873c99!2sCentrum%20Nowoczesnego%20Kszta%C5%82cenia%20Politechniki%20Bia%C5%82ostockiej!5e0!3m2!1spl!2spl!4v1686321564064!5m2!1spl!2spl" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				<label for="answer1">ODPOWIEDŹ:</label>
 				<input type="text" id="answer1" name="answer1" placeholder="odpowiedź...">
 				<button type="button" onclick="checkAnswer(1)">SUBMIT</button>
 			</div>
 			<div class="stage" id="stage2">
 				<div class="stage-title">PRZYSTAŃ 2</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38328.65157142552!2d23.060145017620243!3d53.100482911515364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffb5beb6685b1%3A0xa7c7acadb15c8bbe!2sSzkolna%2017%2C%2015-640%20Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1686320598192!5m2!1spl!2spl" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				<label for="answer2">ODPOWIEDŹ:</label>
 				<input type="text" id="answer2" name="answer2" placeholder="odpowiedź...">
 				<button type="button" onclick="checkAnswer(2)">SUBMIT</button>
 			</div>
 			<div class="stage" id="stage3">
 				<div class="stage-title">PRZYSTAŃ 3</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.657636035855!2d23.144411315829775!3d53.11633937993139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffb53d0a5c6ff%3A0x55824dddf76d5c16!2sWydzia%C5%82%20Depresji!5e0!3m2!1spl!2spl!4v1686320089008!5m2!1spl!2spl" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				<label for="answer3">ODPOWIEDŹ:</label>
 				<input type="text" id="answer3" name="answer3" placeholder="odpowiedź...">
 				<button type="button" onclick="checkAnswer(3)">SUBMIT</button>
@@ -361,7 +324,18 @@
 			
 		</div>
 		<div class="container" id="kontakt">
-			<p>kontakt</p>
+			<div class="section-title">Karolina Baluta</div>
+			<div class="section-text">
+				główny koordynator</br>
+				telefon: 728-460-374</br>
+				e-mail: karolina.baluta@sspb.pl
+			</div>
+			<div class="section-title">Kamil Duda</div>
+			<div class="section-text">
+				moderator aplikacji</br>
+				telefon: 882-003-472</br>
+				e-mail: kamil.duda@sspb.pl
+			</div>
 		</div>
 		
 		<script>
@@ -373,8 +347,13 @@
 			
 			function showTimetable(id) {
 				var contentDivs = document.getElementsByClassName('timetable');
-				for(var i = 0; i < contentDivs.length; i++) contentDivs[i].style.display = 'none';
-				document.getElementById(id).style.display = 'block';
+				for(var i = 0; i < contentDivs.length; i++)
+				{
+					if (contentDivs[i].style.display === 'block' && contentDivs[i].id === id) var close = true;
+					contentDivs[i].style.display = 'none';
+				}
+				if (close) document.getElementById(id).style.display = 'none';
+				else document.getElementById(id).style.display = 'block';
 			}
 			
 			function checkAnswer(questionNumber) {
